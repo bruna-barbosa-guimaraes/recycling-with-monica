@@ -1,12 +1,20 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.UI;
 public class Moves : MonoBehaviour
 {
 
    public GameObject garrafa;
    public int speed = 10;
+   public int vidas = 3;
+   public Text vidasUI;
+
+
+   void Start()
+   {
+
+   }
    
    
    void Update() 
@@ -14,9 +22,16 @@ public class Moves : MonoBehaviour
        SpawnGarrafa();
        Move();
        PreventLeavingScreen();
-       
+       vidasUI.text = "Vidas:" + vidas;
+        if(vidas==0)
+        { 
+            print("text");
+            Destroy(this.gameObject);
+        }
        
     }
+
+    
   
     void SpawnGarrafa()
     {
@@ -46,7 +61,7 @@ public class Moves : MonoBehaviour
            transform.position = new Vector2(PosX,transform.position.y);
        }
     }
-
+    
 }
 
 
