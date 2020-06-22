@@ -1,13 +1,19 @@
 fileFormatVersion: 2
-guid: 9fce356898aa7ae499d9ded4b3ec8db9
+guid: 1dcf35fe3f1a1f9479486c5c91bd59a8
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8683136389822542804
-    second: monica parada_0
+      213: 7456696725522777014
+    second: monica andando_0
   - first:
-      213: -2803853004689319166
-    second: monica parada_1
+      213: -6758160357278582904
+    second: monica andando_1
+  - first:
+      213: 7731258606039782443
+    second: monica andando_2
+  - first:
+      213: 4877119814537066452
+    second: monica andando_3
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -93,7 +99,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: monica parada_0
+      name: monica andando_0
       rect:
         serializedVersion: 2
         x: 0
@@ -107,14 +113,35 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c2c0c5c657d4f7780800000000000000
-      internalID: -8683136389822542804
+      spriteID: 6b38a922a228b7760800000000000000
+      internalID: 7456696725522777014
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: monica parada_1
+      name: monica andando_1
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 288
+        width: 288
+        height: 288
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 887784916f03632a0800000000000000
+      internalID: -6758160357278582904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monica andando_2
       rect:
         serializedVersion: 2
         x: 0
@@ -128,8 +155,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 20bd4153c86b619d0800000000000000
-      internalID: -2803853004689319166
+      spriteID: b24deaf7db2fa4b60800000000000000
+      internalID: 7731258606039782443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monica andando_3
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 0
+        width: 288
+        height: 288
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d7308891a20fa340800000000000000
+      internalID: 4877119814537066452
       vertices: []
       indices: 
       edges: []

@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.UIElements;
+
 public class Moves : MonoBehaviour
 {
 
@@ -9,10 +11,12 @@ public class Moves : MonoBehaviour
    public int speed = 10;
    public int vidas = 3;
    public Text vidasUI;
+   public Animator monica;
 
 
    void Start()
    {
+        monica = GetComponent<Animator>();
 
    }
    
@@ -47,8 +51,22 @@ public class Moves : MonoBehaviour
 
     void Move()
     {
-        float horizontal = Input.GetAxis("Horizontal") * speed *Time.deltaTime;
-        transform.Translate(horizontal, 0, 0);
+        if (Input.GetAxis("Horizontal") != 0)
+        {
+            print("true");
+            float horizontal = Input.GetAxis("Horizontal") * speed * Time.deltaTime;
+            transform.Translate(horizontal, 0, 0);
+
+            monica.SetBool("move", true);
+        }
+            
+        else
+        {
+            print("else");
+            monica.SetBool("move", false);
+        }
+
+        
     }
 
     void PreventLeavingScreen()
