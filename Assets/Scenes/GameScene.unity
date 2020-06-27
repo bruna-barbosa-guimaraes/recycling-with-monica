@@ -218,7 +218,7 @@ GameObject:
   - component: {fileID: 352185402}
   - component: {fileID: 352185403}
   m_Layer: 0
-  m_Name: monica
+  m_Name: Monica
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -357,7 +357,7 @@ GameObject:
   - component: {fileID: 708919605}
   - component: {fileID: 708919604}
   m_Layer: 0
-  m_Name: lixeira30
+  m_Name: Trash30
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -504,7 +504,7 @@ GameObject:
   - component: {fileID: 1061703556}
   - component: {fileID: 1061703555}
   m_Layer: 0
-  m_Name: lixeira10
+  m_Name: Trash10
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -585,7 +585,7 @@ GameObject:
   - component: {fileID: 1223289613}
   - component: {fileID: 1223289612}
   m_Layer: 0
-  m_Name: background
+  m_Name: Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -649,8 +649,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1223289611}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.022, y: 1.078, z: 0}
-  m_LocalScale: {x: 3.0915306, y: 2.6773493, z: 1}
+  m_LocalPosition: {x: 0, y: 2, z: 0}
+  m_LocalScale: {x: 3.2, y: 3, z: 3}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 5
@@ -667,7 +667,7 @@ GameObject:
   - component: {fileID: 1308894731}
   - component: {fileID: 1308894730}
   m_Layer: 5
-  m_Name: pontos
+  m_Name: PointText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -744,7 +744,7 @@ GameObject:
   - component: {fileID: 1310300438}
   - component: {fileID: 1310300439}
   m_Layer: 0
-  m_Name: spawn
+  m_Name: Spawn
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -779,36 +779,6 @@ MonoBehaviour:
   capitaofeio: {fileID: 2076835003028425494, guid: b11fc05796c42724a895e0b237f8efb9,
     type: 3}
   spawnTime: 2
---- !u!1 &1355036274
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1355036275}
-  m_Layer: 0
-  m_Name: pontuacao
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1355036275
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1355036274}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.3417085, y: 0.30955255, z: -184.68164}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 9
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1472747990
 GameObject:
   m_ObjectHideFlags: 0
@@ -921,7 +891,7 @@ GameObject:
   - component: {fileID: 1579159332}
   - component: {fileID: 1579159331}
   m_Layer: 5
-  m_Name: vidas
+  m_Name: LifeText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -998,7 +968,7 @@ GameObject:
   - component: {fileID: 1857219790}
   - component: {fileID: 1857219789}
   m_Layer: 0
-  m_Name: lixeira20
+  m_Name: Trash20
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
