@@ -3,20 +3,24 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.UIElements;
+using UnityEngine.SceneManagement;
 
-public class Moves : MonoBehaviour
+public class MonicaScript : MonoBehaviour
 {
 
-   public GameObject garrafa;
+   public GameObject Bottle;
    public int speed = 10;
    public int vidas = 3;
    public Text vidasUI;
    public Animator monica;
+   
+   
 
 
    void Start()
    {
         monica = GetComponent<Animator>();
+        
 
    }
    
@@ -29,8 +33,9 @@ public class Moves : MonoBehaviour
        vidasUI.text = "Vidas:" + vidas;
         if(vidas==0)
         { 
-            print("text");
+            
             Destroy(this.gameObject);
+            SceneManager.LoadScene("GameOverScene");
         }
        
     }
@@ -43,7 +48,7 @@ public class Moves : MonoBehaviour
         if(Input.GetKeyDown(KeyCode.Space))
         {
 
-            Instantiate(garrafa,new Vector2(transform.position.x -0.2f,transform.position.y +0.7f),Quaternion.identity);
+            Instantiate(Bottle,new Vector2(transform.position.x -0.2f,transform.position.y +0.7f),Quaternion.identity);
             
         }
 
@@ -53,7 +58,7 @@ public class Moves : MonoBehaviour
     {
         if (Input.GetAxis("Horizontal") != 0)
         {
-            print("true");
+            
             float horizontal = Input.GetAxis("Horizontal") * speed * Time.deltaTime;
             transform.Translate(horizontal, 0, 0);
 
@@ -62,7 +67,7 @@ public class Moves : MonoBehaviour
             
         else
         {
-            print("else");
+            
             monica.SetBool("move", false);
         }
 

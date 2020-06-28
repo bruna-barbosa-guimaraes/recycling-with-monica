@@ -10,12 +10,12 @@ GameObject:
   m_Component:
   - component: {fileID: 8028618750040510343}
   - component: {fileID: 4481389371706353665}
-  - component: {fileID: 6091704485407617365}
+  - component: {fileID: 2984237228881023714}
   - component: {fileID: 9180440034365817567}
   - component: {fileID: 4508064585326806790}
   m_Layer: 0
-  m_Name: garrafa
-  m_TagString: Untagged
+  m_Name: Bottle
+  m_TagString: bottleTag
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -28,8 +28,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7218256313090190263}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.22, y: -3.02, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 1.1661, y: -3.0676, z: 0}
+  m_LocalScale: {x: 0.91572165, y: 0.9256365, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -84,7 +84,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &6091704485407617365
+--- !u!114 &2984237228881023714
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -96,7 +96,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 839f2dbff7eaa494aab275c68514d329, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 10
+  speed: 6
   monicaScript: {fileID: 0}
 --- !u!50 &9180440034365817567
 Rigidbody2D:
@@ -132,7 +132,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.09213653, y: -0.050549984}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -143,5 +143,5 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 5.12, y: 5.12}
+  m_Size: {x: 0.5229142, y: 1.2201483}
   m_EdgeRadius: 0

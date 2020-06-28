@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class SpawnScript : MonoBehaviour
 {
-    public GameObject capitaofeio;
+    public GameObject Capitao;
     public float spawnTime = 2;
 
     void Start()
@@ -24,7 +24,7 @@ public class SpawnScript : MonoBehaviour
             spawnPoint = new Vector2(10,1);
 
         }
-        Instantiate (capitaofeio, spawnPoint, Quaternion.identity);
+        Instantiate (Capitao, spawnPoint, Quaternion.identity);
     }
 
 
