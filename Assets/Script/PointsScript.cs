@@ -8,10 +8,10 @@ public class PointsScript : MonoBehaviour
     public Text pontosUI;
     public Text recordeUI;
     public int pontos = 0;
-    
     void Update()
     {
-      if(pontos > PlayerPrefs.GetInt("Recorde")){
+      if(pontos > PlayerPrefs.GetInt("Recorde"))
+      {
           PlayerPrefs.SetInt("Recorde",pontos);
       }  
       pontosUI.text = "Pontos:" + pontos;
