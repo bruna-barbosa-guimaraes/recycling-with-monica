@@ -11,15 +11,15 @@ public class MenuScript : MonoBehaviour
            Application.Quit();
        } 
     }
-    public void OnClickStartGame()
+    public void OnClickStartGame()//ao clicar em start ele inicia o game
     {
         SceneManager.LoadScene("GameScene");
     }
     public void OnClickCredits()
     {
-         SceneManager.LoadScene("CreditsScene");
+         SceneManager.LoadScene("CreditsScene");//carrega a cena de creditos
     }
-    public void OnClickExitGame()
+    public void OnClickExitGame()//sai do jogo
     {
         Application.Quit();
     }

@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 public class GameOverScript : MonoBehaviour
 {
-    void Start()
+    void Start()//apos 3 segundos da tela de game over é carregado a tela de menu
     {
      Invoke("DelayGameOver",3);   
     }

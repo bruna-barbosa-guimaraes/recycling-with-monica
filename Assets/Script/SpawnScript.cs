@@ -5,7 +5,7 @@ public class SpawnScript : MonoBehaviour
 {
     public GameObject Capitao;
     public float spawnTime = 2;
-    void Start()
+    void Start()//spawnar o inimigo em duas posicoes da tela
     {
         InvokeRepeating ("addEnemy",spawnTime,spawnTime);    
     }

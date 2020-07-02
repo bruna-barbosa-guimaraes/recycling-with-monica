@@ -4,7 +4,7 @@ using UnityEngine;
 public class CapitaoScript : MonoBehaviour
 {
    public int speed= 5;
-   void Start()
+   void Start()//velocidade e rotacao do inimigo 
    {    
          Rigidbody2D rb = GetComponent<Rigidbody2D> ();
          if(transform.position.x==-10)
