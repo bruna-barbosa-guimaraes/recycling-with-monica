@@ -66,7 +66,7 @@ public class MonicaScript : MonoBehaviour
     void Lifes()//vidas da monica,se chegar em 0 a monica morre
     {
         vidasUI.text = "Vidas:" + vidas;
-       if(vidas==0)
+       if(vidas<=0)
        {  
             Destroy(this.gameObject);
             SceneManager.LoadScene("GameOverScene");//carrega a cena de game over
