@@ -6,20 +6,24 @@ public class MenuScript : MonoBehaviour
 {
     void Update()
     {
+       //se clicar tecla 'Esc' sai do jogo
        if(Input.GetKey("escape"))
        {
            Application.Quit();
        } 
     }
-    public void OnClickStartGame()//ao clicar em start ele inicia o game
+    //ao clicar em start ele inicia o game
+    public void OnClickStartGame()
     {
         SceneManager.LoadScene("GameScene");
     }
+    //carrega a cena de creditos
     public void OnClickCredits()
     {
-         SceneManager.LoadScene("CreditsScene");//carrega a cena de creditos
+         SceneManager.LoadScene("CreditsScene");
     }
-    public void OnClickExitGame()//sai do jogo
+    //sai do jogo
+    public void OnClickExitGame()
     {
         Application.Quit();
     }

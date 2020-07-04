@@ -55,7 +55,7 @@ public class MonicaScript : MonoBehaviour
             monica.SetBool("move", false);
         }
     }
-    void PreventLeavingScreen() //n deixar a monica sair da tela
+    void PreventLeavingScreen() //nao deixar a monica sair da tela
     {
        if(transform.position.x <= -6.9f || transform.position.x >= 6.9f)
        {

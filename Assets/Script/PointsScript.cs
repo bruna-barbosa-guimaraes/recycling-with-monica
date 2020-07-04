@@ -5,16 +5,22 @@ using UnityEngine.UI;
 
 public class PointsScript : MonoBehaviour
 {
-    public Text pontosUI;
-    public Text recordeUI;
-    public int pontos = 0;
-    void Update()//pontuacao e recordes
+    public Text pontosUI; //pontos na tela
+    public Text recordeUI; //pontos do recorde na tela
+    public int pontos = 0; //valor inicial dos pontos
+
+    //pontuacao e recordes
+    void Update()
     {
-      if(pontos > PlayerPrefs.GetInt("Recorde"))
-      {
-          PlayerPrefs.SetInt("Recorde",pontos);
-      }  
-      pontosUI.text = "Pontos:" + pontos;
-      recordeUI.text = "Recorde:" + PlayerPrefs.GetInt("Recorde");//se a pontuacao for maior que a atual é gerado o recorde novo
+        //se pontos for maior que pontuacao redorde anterior
+        if (pontos > PlayerPrefs.GetInt("Recorde"))
+        {
+            //atualiza valor do recorde
+            PlayerPrefs.SetInt("Recorde", pontos);
+        }
+        //pontuacao na tela atualizada
+        pontosUI.text = "Pontos:" + pontos;
+        //se a pontuacao for maior que a atual é gerado o recorde novo na tela
+        recordeUI.text = "Recorde:" + PlayerPrefs.GetInt("Recorde");
     }
 }
